@@ -23,13 +23,14 @@ type DNSConfig struct {
 
 // Config file general section
 type general struct {
-	Listen        string
-	Proto         string `toml:"protocol"`
-	Domain        string
-	Nsname        string
-	Nsadmin       string
-	Debug         bool
-	StaticRecords []string `toml:"records"`
+	Listen          string
+	Proto           string `toml:"protocol"`
+	Domain          string
+	Nsname          string
+	Nsadmin         string
+	Debug           bool
+	StaticRecords   []string `toml:"records"`
+	TxtRecordsCount int      `toml:"txt_records_count"`
 }
 
 type dbsettings struct {
